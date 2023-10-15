@@ -1,0 +1,34 @@
+body {
+  background-color: #e0f7d1;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  background-color: #c7d3fa;
+  padding: 40px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #b8bbab;
+  position: relative;
+}
+
+.input-text {
+  box-shadow: 5px 5px 10px #c9b1e9;
+  border: 1px solid #b4bde6;
+}
+
+.div-ghost {
+  display: none;
+  width: 120px;
+  height: 120px;
+  background-color: #f1eeb8;
+  position: absolute;
+  top: 40px;
+  left: 300px;
+  box-shadow: 5px 5px 10px #b8bbab;
+
+}
