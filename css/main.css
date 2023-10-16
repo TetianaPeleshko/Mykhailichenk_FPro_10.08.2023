@@ -1,0 +1,9 @@
+.random-cat {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 900px;
+  height: auto;
+}
