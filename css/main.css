@@ -5,20 +5,26 @@ body {
   padding: 0;
 }
 
-.internet-shop {
+.internet-shop, .reg-form {
   display: flex;
   justify-content: space-around;
   margin: 75px;
 }
 
-.categories-wrapper, .list-wrapper, .information-wrapper {
+.categories-wrapper, .list-wrapper, .information-wrapper, .reg-wrapper {
   width: 400px;
-  height: 200px;
   background-color: #c8c5f0;
   padding: 15px;
   box-shadow: 5px 5px 10px #464186;
   border-radius: 10px;
+}
 
+.categories-wrapper, .list-wrapper, .information-wrapper {
+  height: 200px;
+}
+
+.reg-wrapper {
+  height: 300px;
 }
 
 .category-button {
@@ -39,9 +45,7 @@ body {
   gap: 40px;
 }
 
-
-
-.buy-button {
+.buy-button, .save-button {
   margin-top: 50px;
   width: 90px;
   height: 40px;
@@ -50,4 +54,36 @@ body {
   border-radius: 5px;
   box-shadow: 5px 5px 10px #464186;
   cursor: pointer;
+}
+
+.save-button {
+  position: absolute;
+  top: 575px;
+  left: 850px;
+}
+
+table {
+  background-color: #c8c5f0;
+  box-shadow: 5px 5px 10px #464186;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 80px;
+}
+
+table, th, td {
+  border: 1px solid #000000;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.input {
+  margin-bottom: 7px
+}
+
+.text-size {
+  font-size: 18px;
+  font-weight: bolder;
 }
