@@ -4,11 +4,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework 20 Basic Slidedr</title>
+  <title>Homework 19 InternetShop</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+  <div class="internet-shop" id="internet-shop">
+    <div class="categories-wrapper" id="categories-wrapper">
+      <h2>Categories</h2>
+    </div>
+    <div class="list-wrapper" id="list-wrapper">
+
+    </div>
+    <div class="information-wrapper" id="information-wrapper">
+
+    </div>
+  </div>
+
+  <div class="reg-form" id="reg-form">
+    <div class="reg-wrapper">
+      <form id="registrationForm">
+        <label for="firstName">
+          <input type="text" class="input" name="firstName" id="firstName" required> Name
+        </label><br>
+        <label for="lastName">
+          <input type="text" name="lastName" class="input" id="lastName" required> Last Name
+        </label><br>
+        <label for="birthDate">
+          <input type="text" name="birthDate" class="input" id="birthDate" placeholder="yyyy-mm-dd" required> Birth Date
+        </label><br>
+
+        <label>Gender</label>
+        <label for="male">
+          <input type="radio" name="gender" class="input" id="male" value="male" checked> Male
+        </label>
+        <label for="female">
+          <input type="radio" name="gender" class="input" id="female" value="female" checked> Female
+        </label><br><br>
+
+        <label for="city">
+          <select name="city" id="city" class="input" required>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Odesa">Odesa</option>
+          </select> City
+        </label><br><br>
+
+        <label for="address">
+          <textarea class="input" name="address" id="address" rows="2" required>Address</textarea>
+        </label><br>
+
+        <label class="text-size">Languages you speak</label><br>
+        <label for="language1">
+          <input type="checkbox" name="language" id="language1" value="English">English
+        </label>
+        <label for="language1">
+          <input type="checkbox" name="language" id="language2" value="Ukrainian">Ukrainian
+        </label>
+        <label for="language1">
+          <input type="checkbox" name="language" id="language3" value="Polish">Polish
+        </label><br>
+
+        <button type="button" class="save-button" id="saveButton">Submit</button>
+
+      </form>
+
+      <div class="tableData">
+        <div id="userData"></div>
+      </div>
+    </div>
+
+    <div class="my-order-wrapper" id="my-order-wrapper">
+      <div class="info-wrapper" id="info-wrapper"></div>
+      <div class="button-wrapper">
+        <button id="my-orders-button" class="my-orders-button">My orders</button>
+        <button type="button" id="buyModal" class="buyModal">Buy</button>
+      </div>
+
+    </div>
+    <div class="tableOrderDataModal">
+      <div id="orderDataModal"></div>
+    </div>
+
+  </div>
+
+  <!-- Modal window -->
+  <div class="modal-window" id="modal-window">
+    <div class="modal_content" id="modal_content">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <h2>Order form</h2>
+
+      <form id="order-form">
+        <label class="padLabel" for="customerName"><input type="text" id="customerName" required> Full Name
+        </label><br>
+
+
+        <label for="city" class="padLabel">
+          <select id="selectCity" required>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Odesa">Odesa</option>
+          </select> City
+        </label><br>
+        <label for="addressNovaPoshta" class="padLabel">
+          <input type="text" id="addressNovaPoshta" required> Shipping Address (Nova Poshta)
+        </label><br>
+
+        <label for="paymenyMethod" class="padLabel">
+          <select id="paymenyMethod">
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Credit Card">Credit Card</option>
+          </select> Payment Method
+        </label><br>
+
+        <div class="orderModalText" id="orderModalText"></div>
+
+        <label for="comments" class="padLabel">
+          <textarea id="comments" rows="4" cols=25></textarea> Comments
+        </label><br>
+
+        <button type="button" class="submitModal" id="submitModal">Submit</button>
+
+      </form>
+
+    </div>
+  </div>
+
+
 
   <script src="./js/index.js"></script>
 </body>
