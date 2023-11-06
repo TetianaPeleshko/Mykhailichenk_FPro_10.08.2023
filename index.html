@@ -4,11 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homework 20 Basic Slidedr</title>
+  <title>Homework 36 Promise</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+  <div class="main-container">
+    <div class="enter-container">
+      <h2>Post search</h2>
+
+      <label for="postIdInput">
+        <input type="number" id="postIdInput" min="1" max="100"> Enter the post id (1 - 100):
+      </label>
+
+      <button type="button" id="searchButton" class="searchButton">Search</button>
+
+      <div id="postContainer" class="postContainer">
+        <h3>Post</h3>
+        <div id="post"></div>
+        <button type="button" id="getCommentsButton" class="getCommentsButton">Get comments</button>
+        <div id="comments"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/index.js"></script>
 </body>
