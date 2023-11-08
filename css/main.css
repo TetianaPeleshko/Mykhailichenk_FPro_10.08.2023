@@ -1,0 +1,31 @@
+body {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin: 45px;
+}
+
+.weather-container {
+  max-width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #6f6dee;
+  background-color: #c4bff0;
+}
+
+.weather-info {
+  text-align: left;
+}
+
+p {
+  margin: 5px, 0;
+}
+
+.weather-icon {
+  min-width: 100px;
+  margin-top: 25px;
+}
