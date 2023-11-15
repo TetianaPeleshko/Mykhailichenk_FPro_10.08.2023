@@ -52,7 +52,6 @@ class SuperMath {
   }
 }
 
-// Приклад використання:
 const p = new SuperMath();
 const obj = { X: 12, Y: 3, znak: '/' };
 p.check(obj);
