@@ -1,0 +1,10 @@
+.main {
+  padding: 25px;
+  display: flex;
+  width: 75%;
+  height: 100vh;
+  flex-direction: column;
+  background: #8b4185;
+  color: #fff;
+  font-size: 20px;
+}
